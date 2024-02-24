@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Righteous&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Righteous&display=swap" rel="stylesheet">
@@ -42,120 +46,113 @@
     </nav>
     <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/profile-pic.png" alt="Tasha Perry profile picture">
+            <img src="./assets/profile-pic.jpg" alt="Tasha Perry profile picture" class="img-thumbnail">
         </div>
         <div class="section_text">
-            <p class="section_text_p1">👋Hi, I'm</p>
+            <p class="greeting">👋Hi, I'm</p>
             <h1 class="title">Tasha Perry</h1>
             <p class="section_text_p2">Frontend Developer</p>
-            <div class="btn-container">
+            <div class="btn-container mt-3">
                 <button class="btn btn-color-2" onClick="window.open('./assets/resume.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onClick="location.href='./#contact'">Contact Info</button>
-                <div id="social-container">
-<a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-    <i class="fa-brands fa-github"></i>
-</a>
-<a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-   <i class="fa-brands fa-linkedin"></i>
-</a>
-                </div>
+               
         
         </div>
     </section>
     <section id="about">
-       <p class="section_text_p1" >Get To Know More</p>
+       <p class="section-p1" >Get To Know More</p>
        <h1 class="title">About Me</h1>
        <div class="section-container">
         <div class="section_pic-container">
 <img src="./assets/about-pic.png" alt="Profile picture"
 class="about-pic"/>
-        </div>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                    <h3>Experience</h3>
-                    <p>6 months <br />Frontend Development</p>
+ </div>
+     <div class="about-details-container">
+     <div class="about-containers">
+       <div class="details-container">
+    </i> <i class="fa-solid fa-briefcase fa-2x"></i>
+         <h3>Experience</h3>
+        <p>6 months <br /> Front-end Development</p>
  </div>
  <div class="details-container">
-    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+  <i class="fa-solid fa-graduation-cap fa-2x"></i>
     <h3>Education</h3>
-    <p>Frontend Developer<br />Master of Arts in Philology</p>
+      <p>Frontend Development Certificate<br />M.Sc. Masters Degree</p>
+     
 </div>
     </div>
-    <div class="text-container">
-        <p>
-Master of Arts in Philology
-Kharkiv National University, Kharkiv, Ukraine
-Graduated: 2008
-<ul>
-   
-        <li>Specialized in Comparative Literature, with a focus on the influence of classical literature on modern European novels.</li>
-        <li>Graduated with a Diploma of Honors, recognizing outstanding academic achievement.</li>
-
-</ul>
-        </p>
-<p>Front-End Developer Course
-SheCodes Foundation
-Completed: 2023</p>
-<ul>
-    <li>Completed an intensive front-end development course, covering HTML, CSS, JavaScript, and responsive web design.</li>
-    <li>Acquired practical skills in coding, debugging, and deploying web applications, with a focus on user-centered design principles.</li>
-</ul>
-    </div>
+    
        </div>
           </div>
-          <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow.png" onClick="location.href='./#experience'"/>
+          <div>
+    <i class="fa-solid fa-arrow-down icon arrow" onClick="location.href='./#experience'"></i>
+          </div>
           </section>
+
+
           <section id="experience">
-            <p class="section_text_p1">Explore My</p>
+            <p class="section-p1">Explore My</p>
             <h1 class="title">Experience</h1>
             <div class="experience-details-container">
-                <div class="about-container">
                 <div class="about-containers">
-                    <div class="details-containers">
+               
+                    <div class="details-container">
                         <h2 class="experience-sub-title">Frontend Development</h2>
                         <div class="article-container">
                             <article>
-                            <i class="fa-solid fa-check"></i>
+                          <i class="fa-brands fa-html5"></i>
                             <div>
                                 <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <p>Intermediate</p>
+                            </div>
+                            </article>
+                            <article>
+                       <i class="fa-brands fa-css3-alt"></i>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            </article>
+                            <article>
+                         <i class="fa-brands fa-js"></i>
+                            <div>
+                                <h3>Java-Script</h3>
+                                <p>Basic</p>
+                            </div>
+                            </article>
+                            <article>
+                           <i class="fa-brands fa-react"></i>
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>
+                            </article>
+                            <article>
+                        <i class="fa-solid fa-database"></i>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
                             </div>
                             </article>
                             <article>
                             <i class="fa-solid fa-check"></i>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>jQuery</h3>
+                                <p>Basic</p>
                             </div>
                             </article>
                             <article>
                             <i class="fa-solid fa-check"></i>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Shopify Liquid</h3>
+                                <p>Intermediate</p>
                             </div>
                             </article>
                             <article>
                             <i class="fa-solid fa-check"></i>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                            </article>
-                            <article>
-                            <i class="fa-solid fa-check"></i>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                            </article>
-                            <article>
-                            <i class="fa-solid fa-check"></i>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Figma</h3>
+                                <p>Basic</p>
                             </div>
                             </article>
                         </div>
@@ -164,7 +161,7 @@ Completed: 2023</p>
 
                 </div>
                 <div class="details-container">
-                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <h2 class="experience-sub-title">Backend Development</h2>
                         <div class="article-container">
                             <article>
                             <i class="fa-solid fa-check"></i>
