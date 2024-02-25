@@ -1,25 +1,10 @@
 @media screen and (max-width:1200px) {
-    #desktop-nav {
-        display:none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    #experience, .experience-details-container {
-        margin-top: 2rem;
-    }
+   
+   
     #profile, .section-container {
         display: block;
     }
-    .arrow {
-        display: none;
-    }
+   
     section, .section-container {
         height:fit-content;
     }
@@ -27,8 +12,8 @@
         margin: 0.5%;
     }
     .section_pic-container {
-        width: 275px;
-        height: 275px;
+        width: 300px;
+        height: 300px;
         margin: 0 auto 2rem;
     }
     .about-container {
@@ -75,7 +60,7 @@
     }
     .section_pic-container {
         width: auto;
-        height: 46vw;
+        height: 100vw;
         justify-content: center;
     }
 .section_text_p2 {

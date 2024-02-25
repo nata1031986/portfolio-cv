@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+   <!-- Bootstrap JavaScript (Popper.js and Bootstrap JS) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.4.0/mdb.min.js"></script>
+
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Righteous&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,43 +20,43 @@
     <title>My Portfolio</title>
 </head>
 <body>
-    <nav id="desktop-nav">
-<div class="logo">Tasha Perry</div>
-<div>
-    <ul class="nav-links">
-        
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-    </ul>
-</div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Tasha Perry</div>
-        <div class="hamburher-menu">
-            <div class="hamburger-icon" onClick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
+    <div id="header">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand">Tasha Perry</span>
+    <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-hamburger"></i> <!-- Font Awesome hamburger icon -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-    <div class="menu-links">
-<li><a href="#about" onClick="toggleMenu()">About</a></li>
-<li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
-<li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
-<li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
-    </div>
-    </div>
-    </nav>
-    <section id="profile">
+  </div>
+</nav>
+ <section id="profile">
         <div class="section_pic-container">
-            <img src="./assets/profile-pic.jpg" alt="Tasha Perry profile picture" class="img-thumbnail">
+            <img src="./assets/profile-pic.jpg" alt="Tasha Perry profile picture" class="pic-1 img-thumbnail mt-5">
         </div>
         <div class="section_text">
             <p class="greeting">👋Hi, I'm</p>
             <h1 class="title">Tasha Perry</h1>
-            <p class="section_text_p2">Frontend Developer</p>
-            <div class="btn-container mt-3">
+            <p class="section-p2">Frontend Developer</p>
+            <div class="btn-container mt-5">
                 <button class="btn btn-color-2" onClick="window.open('./assets/resume.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onClick="location.href='./#contact'">Contact Info</button>
         
@@ -60,237 +64,57 @@
         </div>
   
     </section>
-    <section id="about">
-       <p class="section-p1" >Get To Know More</p>
-       <h1 class="title">About Me</h1>
-       <div class="section-container">
-        <div class="section_pic-container">
-<img src="./assets/about-pic.png" alt="Profile picture"
-class="about-pic"/>
- </div>
-     <div class="about-details-container">
-     <div class="about-containers">
-       <div class="details-container">
-    </i> <i class="fa-solid fa-briefcase fa-2x"></i>
-         <h3>Experience</h3>
-        <p>6 months <br /> Front-end Development</p>
- </div>
- <div class="details-container">
-  <i class="fa-solid fa-graduation-cap fa-2x"></i>
-    <h3>Education</h3>
-      <p>Frontend Development Certificate<br />M.Sc. Masters Degree</p>
-     
+
 </div>
-    </div>
-    
-       </div>
-          </div>
-          <div>
-    <i class="fa-solid fa-arrow-down icon arrow" onClick="location.href='./#experience'"></i>
-          </div>
-          </section>
 
-
-          <section id="experience">
-            <p class="section-p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-               
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Frontend Development</h2>
-                        <div class="article-container">
-                            <article>
-                        <i class="fa-solid fa-file-code"></i>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
-                            </div>
-                            </article>
-                            <article>
-                       <i class="fa-brands fa-css3-alt"></i>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                            </article>
-                            <article>
-                         <i class="fa-brands fa-js"></i>
-                            <div>
-                                <h3>Java</h3>
-                                <p>Basic</p>
-                            </div>
-                            </article>
-                            <article>
-                           <i class="fa-brands fa-react"></i>
-                            <div>
-                                <h3>React</h3>
-                                <p>Basic</p>
-                            </div>
-                            </article>
-                            <article>
-                        <i class="fa-solid fa-database"></i>
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                            </article>
-                            <article>
-                           <i class="fa-solid fa-j"></i>
-                            <div>
-                                <h3>jQuery</h3>
-                                <p>Basic</p>
-                            </div>
-                            </article>
-                            <article>
-                           <i class="fa-brands fa-shopify"></i>
-                            <div>
-                                <h3>Liquid</h3>
-                                <p>Intermediate</p>
-                            </div>
-                            </article>
-                            <article>
-                  <i class="fa-solid fa-check"></i>
-                            <div>
-                                <h3>Motoko</h3>
-                                <p>Basic</p>
-                            </div>
-                            </article>
-                            <article>
-                         <i class="fa-brands fa-figma"></i>
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Basic</p>
-                            </div>
-                            </article>
-                           
-                            <article>
-                       <i class="fa-brands fa-php"></i>
-                            <div>
-                                <h3>PHP</h3>
-                                <p>Intermediate</p>
-                            </div>
-                            </article>
-                        </div>
-
-                    </div>
-
+ <div id="about">
+          <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="assets/about-pic.png" class="pic">
                 </div>
-               
-
-                    </div>
-
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p class="text">
+As a front-end developer, my portfolio showcases
+ my passion for crafting engaging and user-friendly web experiences.
+  With expertise in HTML, CSS, and JavaScript, I specialize in 
+  transforming design concepts into fully functional and visually
+   stunning websites😍</p>
+   <div class="tab-titles">
+ <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+   <p class="tab-links" onclick="opentab('experience')">Experience</p>
+   <p class="tab-links" onclick="opentab('education')">Education</p>
+   </div>
+   <div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>UI</span><br/>Designing Web/App Interfaces</li>
+        <li><span>UI</span><br/>Web Development</li>
+        <li><span>UI</span><br/>Web App Development</li>
+        
+    </ul>
+   </div>
+   <div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2023 - Current</span><br/>Recruiter at Global Fleet(Chicago)</li>
+        <li><span>2022-2023</span><br/>IT Recruiter at Recruitment Agency</li>
+        <li><span>2019-2022</span><br/>IT Language Tutor at SkillUp</li>
+        <li><span>2017-2019/span><br/>Writer at Livingston Research Group</li>
+        <li><span>2010-2017</span><br/>English Language Tutor at Online School</li>
+    </ul>
+   </div>
+   <div class="tab-contents" id="education">
+    <ul>
+        <li><span>2023-2024</span><br/>front-end Development by SheCodes</li>
+        <li><span>2022</span><br/>IT Recruitment Certification by SkillUp</li>
+        <li><span>2003-2008</span><br/>MSc in Philology by Kharkiv National University</li>
+        
+    </ul>
+   </div>
                 </div>
             </div>
-            <i class="fa-solid fa-arrow-down"></i>
-          </section>
-
-
-          <section id="projects">
-            <p class="section-p1">Browse My Resent</p>
-            <h1 class="title">Projects</h1>
-           <div class="experience-details-container">
-                <div class="about-containers">
-             <div class="details-container color-container">
-            <div class="article-container">
-                    <img src="./assets/project-1.png"
-                    alt="Project-img" 
-                    class="img-fluid rounded"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Weather App</h2>
-                    <div class="btn-container">
-                      
-                        <button class="btn btn-color-2 project-btn" onClick="locatiom.href='https://github.com/'">Github</button>
-                     <a href="https://cool-buttercream-844745.netlify.app/" class="btn btn-color-2 project-btn" target="_blank">Live Demo</a>
-
-
-                </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.png"
-                    alt="Project-img" 
-                     class="img-fluid rounded"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Online Shop</h2>
-                    <div class="btn-container">
-                      
-                        <button class="btn btn-color-2 project-btn" onClick="locatiom.href='https://github.com/nata1031986/OnlineShop'">Github</button>
-                       
-                <a href="https://app.netlify.com/sites/cerulean-crepe-d0a02c/overview" class="btn btn-color-2 project-btn" target="_blank">Live Demo</a>
-
-               
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.png"
-                    alt="Project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                      
-                        <button class="btn btn-color-2 project-btn" onClick="locatiom.href='https://github.com/'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onClick="locatiom.href='https://github.com/'">Live Demo</button>
-                </div>
-                </div>
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-4.png"
-                    alt="Project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                      
-                        <button class="btn btn-color-2 project-btn" onClick="locatiom.href='https://github.com/'">Github</button>
-                        <button class="btn btn-color-2 project-btn" onClick="locatiom.href='https://github.com/'">Live Demo</button>
-                </div>
-                </div>
           </div>
-    <i class="fa-solid fa-arrow-down"></i>
-         <section id="contact">
-   <p class="section-p1">Get in Touch</p>
-   <h1 class="title">Contact Me</h1>
-<div class="contact-info-upper-container">
-    
-    <div class="contact-info-container">
-      <i class="fa-regular fa-envelope"></i>
-      
-      <p><a href="mailto:nata1031986@gmail.com">nata1031986@gmail.com</a></p>
-
-    
-
-      </div>
-       <div class="contact-info-container">
-     <i class="fa-solid fa-phone"></i>
-      
-      <p><a href=""> 380660859601 </a></p>
-
-    
-
-      </div>
-      
-      
-    
-      </div>
-                
-          </section>
-          <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-   <div class="nav-links">
-<li><a href="#about" onClick="toggleMenu()">About</a></li>
-<li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
-<li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
-<li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
-
-                    </ul>
-
-                </div>
-            </nav>
-            <p>Copyright &#169; 2024 Tasha Perry. All Rights Reserved.</p>
-          </footer>
+    </div>
     <script scr="script.js"></script>
     <script src="https://kit.fontawesome.com/823caa4f71.js" crossorigin="anonymous"></script>
 </body>
