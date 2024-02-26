@@ -11,7 +11,7 @@
     section {
         margin: 0.5%;
     }
-    .section_pic-container {
+    .section-image {
         width: 300px;
         height: 300px;
         margin: 0 auto 2rem;
@@ -21,15 +21,9 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    #contact, 
-    footer {
-        height: 40vh;
-    }
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
-    }
+@media screen and (max-width: 700px) {
+ 
+ 
     article {
         font-size: 1rem;
     }
@@ -53,12 +47,8 @@
     .logo {
         font-size: 1.5rem;
     }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-    .section_pic-container {
+  
+    .section-image {
         width: auto;
         height: 100vw;
         justify-content: center;
@@ -73,13 +63,4 @@
 .text-container {
     text-align: justify;
 }
-}
-@media screen and (max-width: 1400px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
 }
