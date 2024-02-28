@@ -41,6 +41,7 @@ font-weight: bold;
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 .grid {
@@ -55,4 +56,72 @@ font-weight: bold;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+.box:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -2px; /* Increase shadow for depth */
+}
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px; 
+  height: 100%;
+  width: 2px; 
+  background-color: white; 
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.timeline-event h3, .timeline-event p {
+  margin: 0;
+  color: #fff; /* White text color */
+}
+
+.timeline-event h3 {
+  margin-bottom: 5px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 20px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.timeline-event {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  .timeline-event {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+

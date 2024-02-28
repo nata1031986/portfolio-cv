@@ -5,3 +5,4 @@ initMDB({ Collapse });
 button.addEventListener('click', function() {
   this.style.transform = 'scale(1)'; // Keeps the size unchanged
 });
+
