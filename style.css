@@ -125,3 +125,6 @@ font-weight: bold;
   }
 }
 
+.btn:active {
+  transform: scale(1); 
+}
